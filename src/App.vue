@@ -1,13 +1,20 @@
 <template>
-  <h1>{{ message }}</h1>
+  <div class="main">
+    <HeaderMain />
+    <BodyContent />
+  </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      message: 'Hello World!'
-    }
-  }
-}
+<script lang="ts">
+import { defineComponent } from 'vue';
+import HeaderMain from './components/HeaderMain.vue';
+import BodyContent from './components/BodyContent.vue';
+
+export default defineComponent({
+  name: 'App',
+  components: {
+    HeaderMain,
+    BodyContent
+  },
+});
 </script>
