@@ -8,6 +8,35 @@
 	
 	<section>
 		<h2>Contacto</h2>
+		<form action="">
+			<fieldset>
+				<legend>Contactanos llenando todos los campos</legend>
+				
+				<div>
+					<label for="">Nombre</label>
+					<input type="text" placeholder="Nombre"/>
+				</div>
+
+				<div>
+					<label for="">Telefono</label>
+					<input type="tel" placeholder="Telefono"/>
+				</div>
+
+				<div>
+					<label for="">Correo</label>
+					<input type="email" placeholder="Email"/>
+				</div>
+
+				<div>
+					<label for="">Mensaje</label>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</div>
+
+				<div>
+					<input type="submit" value="Enviar" />
+				</div>
+			</fieldset>
+		</form>
 	</section>
 
 	<footer>
