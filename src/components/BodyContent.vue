@@ -1,48 +1,51 @@
 <template>
-  <main>
-	<h2>Mis Servicios</h2>
+	<main class="contenedor sombra">
+		<h2>Mis Servicios</h2>
 
-	<Box1 title="Diseño Web" content="Iste illo, nobis rerum asperiores et fugiat ratione enim tenetur recusandae quidem nisi harum tempore sapiente rem dolorum saepe voluptatem unde dolor." />	
-	<Box1 title="Aplicaciones Web" content="Iste illo, nobis rerum asperiores et fugiat ratione enim tenetur recusandae quidem nisi harum tempore sapiente rem dolorum saepe voluptatem unde dolor." />	
-	<Box1 title="E-Commerce" content="Iste illo, nobis rerum asperiores et fugiat ratione enim tenetur recusandae quidem nisi harum tempore sapiente rem dolorum saepe voluptatem unde dolor." />	
-	
-	<section>
-		<h2>Contacto</h2>
-		<form action="">
-			<fieldset>
-				<legend>Contactanos llenando todos los campos</legend>
-				
-				<div>
-					<label for="">Nombre</label>
-					<input type="text" placeholder="Nombre"/>
-				</div>
+		<div class="servicios">
+			<Box1 title="Diseño Web" content="Iste illo, nobis rerum asperiores et fugiat ratione enim tenetur recusandae quidem nisi harum tempore sapiente rem dolorum saepe voluptatem unde dolor." />	
+			<Box1 title="Aplicaciones Web" content="Iste illo, nobis rerum asperiores et fugiat ratione enim tenetur recusandae quidem nisi harum tempore sapiente rem dolorum saepe voluptatem unde dolor." />	
+			<Box1 title="E-Commerce" content="Iste illo, nobis rerum asperiores et fugiat ratione enim tenetur recusandae quidem nisi harum tempore sapiente rem dolorum saepe voluptatem unde dolor." />	
+		</div>
+		
+		<section>
+			<h2>Contacto</h2>
+			<form class="formulario">
+				<fieldset>
+					<legend>Contactanos llenando todos los campos</legend>
+					
+					<div class="contenedor-campos">
+						<div class="campo">
+							<label for="">Nombre</label>
+							<input class="input-text" type="text" placeholder="Nombre"/>
+						</div>
 
-				<div>
-					<label for="">Telefono</label>
-					<input type="tel" placeholder="Telefono"/>
-				</div>
+						<div class="campo">
+							<label for="">Telefono</label>
+							<input class="input-text" type="tel" placeholder="Telefono"/>
+						</div>
 
-				<div>
-					<label for="">Correo</label>
-					<input type="email" placeholder="Email"/>
-				</div>
+						<div class="campo">
+							<label for="">Correo</label>
+							<input class="input-text" type="email" placeholder="Email"/>
+						</div>
 
-				<div>
-					<label for="">Mensaje</label>
-					<textarea name="" id="" cols="30" rows="10"></textarea>
-				</div>
-
-				<div>
-					<input type="submit" value="Enviar" />
-				</div>
-			</fieldset>
-		</form>
-	</section>
-
-	<footer>
+						<div class="campo">
+							<label for="">Mensaje</label>
+							<textarea class="input-text" name="" id="" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+					
+					<div class="flex alinear-derecha">
+						<input class="button w-sm-100" type="submit" value="Enviar" />
+					</div>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	<footer class="footer">
 		<p>Todos los derechos reservados. Luis Ramos Full Stack</p>
 	</footer>
-  </main>
 </template>
 <script lang="ts">
 	import { defineComponent } from 'vue';
