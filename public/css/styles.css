@@ -13,7 +13,7 @@ html {
 }
 /* Scroll-snap */
 
-.servicios, .navegacion-principal, .formulario {
+.servicios, .navegacion-principal, .formulario, .footer {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
